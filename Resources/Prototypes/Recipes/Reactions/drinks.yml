@@ -1557,3 +1557,17 @@
       amount: 1
   products:
     BacchusBlessing: 4
+
+- type: reaction
+  id: Sharkminnow
+  requiredMixerCategories:
+  - Shake
+  reactants:
+    CarpoToxin:
+      amount: 1
+    Moonshine:
+      amount: 3
+    Absinthe:
+      amount: 2
+  products:
+    Sharkminnow: 6

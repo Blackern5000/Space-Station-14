@@ -2264,3 +2264,18 @@
   - type: Icon
     sprite: Objects/Consumable/Drinks/bacchusblessing.rsi
     state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkSharkminnow
+  suffix: sharkminnow
+  description: You know what that means!
+  components:
+  - type: Solution
+    solution:
+        reagents:
+        - ReagentId: Sharkminnow
+          Quantity: 60
+  - type: Icon
+    sprite: Objects/Consumable/Drinks/sharkminnow.rsi
+    state: icon

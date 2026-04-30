@@ -2295,3 +2295,31 @@
         - !type:MetabolizerTypeCondition
           type: [Dwarf]
           inverted: true
+
+- type: reagent
+  id: Sharkminnow
+  name: reagent-name-sharkminnow
+  parent: BaseAlcohol
+  desc: reagent-desc-sharkminnow
+  physicalDesc: reagent-physical-desc-strong-smelling
+  flavor: sharkminnow
+  color: "#f66380"
+  metamorphicSprite:
+    sprite: Objects/Consumable/Drinks/_sharkminnow.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 6
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Digestion:
+      metabolites:
+        Ethanol: 0.6
+      effects:
+      - !type:SatiateThirst
+        factor: 3
+      - !type:Drunk
+        boozePower: 2
+      - !type:HealthChange
+        damage:
+          types:
+            Bloodloss: 1 # Meant to be recovered naturally, no medbay visits unless you drink too much and poison yourself.
